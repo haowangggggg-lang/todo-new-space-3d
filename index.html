@@ -10,6 +10,17 @@
     <link rel="stylesheet" crossorigin href="./assets/index-Bq6Pdfil.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div style="max-width:520px;margin:15vh auto;padding:28px;font-family:system-ui,sans-serif;line-height:1.8;color:#294d3e">
+        <h1 style="font-size:24px">301 空间预览</h1>
+        <p id="preview-message">正在加载三维画面。如果画面没有出现，可以打开网页版预览。</p>
+        <a href="https://haowangggggg-lang.github.io/todo-new-space-3d/" style="display:inline-block;padding:10px 18px;background:#294d3e;color:white;border-radius:8px;text-decoration:none">打开 GitHub 预览</a>
+      </div>
+    </div>
+    <script>
+      if (location.protocol === 'file:') {
+        document.getElementById('preview-message').textContent = '这是项目源码文件，不能直接运行三维画面。请点击下面的网页预览入口。';
+      }
+    </script>
   </body>
 </html>
